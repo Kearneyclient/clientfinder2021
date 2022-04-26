@@ -89,7 +89,7 @@ def basic():
     client = Client(transport=transport)
 
     df = pd.read_excel(r'https://docs.google.com/spreadsheets/d/e/2PACX-1vQjKobrW3PCsWIoQwQRJptG9KIJ7z8D2YEgYYTn8v5VUJrxyRBh3KmNI350kcYm5g/pub?output=xlsx','keywords')
-    df=df.fillna(' ')
+    
     df_coef = pd.read_excel(r'https://docs.google.com/spreadsheets/d/e/2PACX-1vQjKobrW3PCsWIoQwQRJptG9KIJ7z8D2YEgYYTn8v5VUJrxyRBh3KmNI350kcYm5g/pub?output=xlsx','coefs')
     df_dates = pd.read_excel(r'https://docs.google.com/spreadsheets/d/e/2PACX-1vQjKobrW3PCsWIoQwQRJptG9KIJ7z8D2YEgYYTn8v5VUJrxyRBh3KmNI350kcYm5g/pub?output=xlsx','dates')
 
